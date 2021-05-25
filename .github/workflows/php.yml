@@ -1,2 +1,11 @@
 name: pipeline-components-php-linter
-uses: pipeline-components/php-linter@v0.12.5
+on:
+  push:
+    branches-ignore:
+      - 'master2'
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v2
+        - uses: pipeline-components/php-linter@v0.12.5
