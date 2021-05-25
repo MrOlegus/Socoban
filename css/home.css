@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 132);
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    align-self: stretch;
+    font-size: 3vh;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    min-height: 80vh;
+    color: rgb(254, 254, 84);
+}
+
+span.date, span.number{
+    color: rgb(255, 255, 255);
+}
+
+span.user_name {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 170, 170);
+    font-weight: normal;
+    text-align: center;
+}
+
+div.title {
+    background: rgb(0, 170, 170);
+}
+
+img.rules {
+    height: 200px;
+}
+
+p.pic {
+    text-align: center;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 18vw;
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(187, 187, 187);
+    font-size: 3vh;
+    
+    margin-top: 10px;
+    
+    width: 200px;
+    height: 350px;
+    
+    outline-style: solid;
+    outline-offset: -10px;
+    outline-width: 2px;
+    
+    padding: 20px 20px 20px 20px;
+    
+    box-shadow: 10px 10px;
+}
+
+a {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+a:hover, #enterMenu:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+div.sidebar {
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(187, 187, 187);
+    height: 4vh;
+    font-size: 3vh;
+    z-index: 100;
+}
+
+a.header {
+    justify-content: center;
+}
+
+div.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    align-items: stretch;
+    flex-basis: 100%;
+}
+
+#enterMenu {
+    display: block;
+}
+
+#loginForm {
+    display: none;
+    background-color: rgb(0, 170, 170);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 5% 5% 5% 5%;
+}
+
+#enterMenu:hover #loginForm {
+    display: block;
+}
+
+#register {
+    display: inline-block;
+    font-size: 15px;
+    float: bottom;
+}
+
+#editLogin, #editPassword {
+    float: right;
+    width: 60%;
+}
+
+#btnEnter {
+    width: 30%;
+    margin-right: 8%;
+}
+
+#area {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+    font-size: 15px;    
+    height: 50px;
+}
+
+span.mark {
+    margin-left: 50px;
+}
+
+span.good {
+    color: rgb(254, 254, 84);
+}
+
+span.bad {
+    color: rgb(187, 187, 187);
+}
+
+#review_field {
+    padding: 10px 10px 10px 10px;
+    resize: none;
+    width: 900px; 
+    height: 300px;
+    font-size: 25px;
+    margin-left: 120px;
+}
+
+#button_send {
+    width: 922px;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 120px;
+}
+
+@media screen and (max-width: 1000px) {
+    #sidebar {
+        align-self: center;
+        min-width: 80vw;
+        min-height: 50vh;
+    }
+    
+    div.sidebar {
+        align-self: center;
+    }
+    
+    main {
+        margin-left: 0;
+    }
+    
+    a.sidebar {
+        text-align: center;
+    }
+    
+    #area {
+        flex-direction: column;
+    }
+    
+    #enterMenu:hover {
+        min-width: 60vw;
+    }
+    
+    #footer {
+        font-size: 2vw;    
+    }
+    
+    #editLogin, #editPassword, #btnEnter, #register {
+        font-size: 3vw;
+    }
+}

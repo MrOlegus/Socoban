@@ -1,0 +1,21 @@
+<main>
+    <h1>Отзывы</h1>
+        <form id="review_form" method="post" action="../reviews.php">
+        <textarea id="review_field"
+                  name="review_text"
+                  placeholder="Пишите свой отзыв здесь"
+                  form="review_form"
+                  required></textarea> 
+        
+        <div style="margin: 20px 90px 20px 90px; display: flex; justify-content: space-around">
+            <span><input type="radio" name="mark" value="1"> 1 <br></span>
+            <span><input type="radio" name="mark" value="2"> 2 <br></span>
+            <span><input type="radio" name="mark" value="3"> 3 <br></span>
+            <span><input type="radio" name="mark" value="4"> 4 <br></span>
+            <span><input type="radio" name="mark" value="5"> 5 <br></span>
+        </div>
+        <input id="button_send" type="submit" value="Отправить" name="button_send" />
+    </form>
+    <hr>
+    {reviews}
+</main>

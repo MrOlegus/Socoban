@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    background-color: rgb(0, 0, 132);
+    min-height: 100vh;
+}
+
+a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover, div.line:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#registration {
+    background-color: rgb(187, 187, 187);
+    font-size: 3vh;
+    width: 33%;
+    padding: 1% 1% 1% 1%;
+    
+    outline-style: solid;
+    outline-offset: -10px;
+    outline-width: 2px;
+    
+    box-shadow: 10px 10px;
+    
+    margin: auto auto auto auto;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;    
+    justify-content: space-between;
+}
+
+#labelRegister {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px; 
+}
+
+div.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 1% 1% 1%;
+}
+
+#btnRegister {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #registration {
+        align-self: center;
+        min-width: 70vw;
+        min-height: 30vh;
+    }
+    
+    #labelRegister, #btnRegister {
+        margin-bottom: 3vh;
+        margin-top: 1vh;
+        font-size: 3vw;
+    }
+    
+    #registrationForm {
+        align-items: stretch;
+        min-height: 25vh;
+    }
+    
+    .edit {
+        margin-right: 2vw;
+        font-size: 3vw;
+    }
+    
+    div.line {
+        margin-left: 2vw;
+        font-size: 3vw;
+    }
+}
