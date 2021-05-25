@@ -1,2 +1,2 @@
-- name: pipeline-components-php-linter
-  uses: pipeline-components/php-linter@v0.12.5
+name: pipeline-components-php-linter
+uses: pipeline-components/php-linter@v0.12.5
