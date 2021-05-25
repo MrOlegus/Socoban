@@ -1,11 +1,8 @@
 name: php linter
 on:
-  push:
-    branches-ignore:
-      - 'master2'
 jobs:
   linter:
-    runs-on: Windows-latest
+    runs-on: linux-latest
     steps:
         - uses: actions/checkout@v2
         - uses: pipeline-components/php-linter@v0.12.5
