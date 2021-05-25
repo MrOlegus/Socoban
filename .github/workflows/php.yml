@@ -1,11 +1,11 @@
-name: pipeline-components-php-linter
+name: php linter
 on:
   push:
     branches-ignore:
       - 'master2'
 jobs:
   linter:
-    runs-on: ubuntu-latest
+    runs-on: Windows 10 64-bit
     steps:
         - uses: actions/checkout@v2
         - uses: pipeline-components/php-linter@v0.12.5
