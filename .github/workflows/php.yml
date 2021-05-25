@@ -1,5 +1,6 @@
 name: php linter
 on:
+  push
 jobs:
   linter:
     runs-on: linux-latest
