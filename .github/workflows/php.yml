@@ -5,7 +5,7 @@ on:
       - 'master2'
 jobs:
   linter:
-    runs-on: Windows 10 64-bit
+    runs-on: Windows-latest
     steps:
         - uses: actions/checkout@v2
         - uses: pipeline-components/php-linter@v0.12.5
