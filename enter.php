@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+ 
 $status = 0;
 if (isset($_POST['login'])) {
     $dbh = new PDO('mysql:dbname=socoban;host=localhost', 'root', '');
