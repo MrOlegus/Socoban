@@ -11,7 +11,7 @@ $sth = $dbh->prepare("SELECT * FROM news ORDER BY ID");
 $sth->execute();
 
 $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
-$news = '';
+$news = ''; 
 foreach ($rows as $row) {
     $news .= '<p>' . $row['news'] . ' <span class="date">[' . $row['date'] . ']</span> </p>';
 }
